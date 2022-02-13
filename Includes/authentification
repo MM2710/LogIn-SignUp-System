@@ -1,0 +1,36 @@
+<?php
+session_start();
+$server="localhost";
+$db_name="log in";
+$user="root";
+$password="";
+
+$cnx=mysqli_connect($server, $user, $password, $db_name) or die("Erreur de Connexion avec DB!!!");
+if(isset($_POST['Login'])==true){
+@$_SESSION['clickLogin']="oui";
+$nom=$_POST['nom'];
+$prenom=$_POST['prenom'];
+$mp=$_POST['mp']; 
+
+$sql="SELECT *FROM users WHERE Nom='$nom'AND Prenom='$prenom' AND pass=$mp;";
+$result=mysqli_query($cnx,$sql) or die("Erreur query");
+if($result==False || mysqli_num_rows($result)==0) {
+   
+      @$_SESSION['cnx']="pas de connexion";
+        
+    
+     header("Location:http://localhost/Login_Signup/Login.php");
+     
+  
+}
+else{
+    $_SESSION['valider']="oui";
+    header("Location:http://localhost/Login_Signup/Bienvenu.php");
+}
+}
+
+
+
+
+
+?>
