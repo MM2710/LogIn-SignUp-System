@@ -1,0 +1,50 @@
+body{
+    background-image: url("pics/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400px 800px;
+    background-color: aliceblue;
+    margin:0; 
+    height:100%;
+}
+table{
+    background-color: rgb(255, 218, 247);
+    
+    border: black solid 3px ;
+    
+    margin-top: 2cm;
+    width : 800px;
+    height : 500px;
+    
+}
+th,td{
+    border: black solid 3px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align : center;
+  
+    background-color: rgb(241, 201, 231);
+    width : 200px;
+    height : 10px;
+    margin : 7px;
+    left: 15%;
+    align-items: center;
+}
+header{
+   background-color: rgb(241, 201, 231);
+   margin:0;
+   padding: 0;
+   height:7vh;
+
+}
+h1{
+    font-size: 1.1cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 0cm;
+}
+.dcnx{
+    text-align: center;
+    font-size:x-large;
+    background-color: rgb(218, 171, 18);
+    margin-top: 0cm;
+}
