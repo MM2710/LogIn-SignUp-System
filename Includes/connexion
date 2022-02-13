@@ -1,0 +1,10 @@
+<?php 
+$server="localhost";
+$db_name="log in";
+$user="root";
+$password="";
+
+$cnx=mysqli_connect($server, $user, $password, $db_name) or die("Erreur de Connexion avec DB!!!");
+
+
+?>
