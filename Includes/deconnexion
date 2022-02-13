@@ -1,0 +1,6 @@
+<?php
+session_start();
+header("Location: http://localhost/Login_Signup/Login.php");
+session_destroy();
+
+?>
